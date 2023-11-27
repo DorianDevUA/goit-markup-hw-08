@@ -1,0 +1,77 @@
+.modal {
+  margin: 0 auto;
+  padding: 4rem;
+
+  background-color: $bg-primary;
+  border-radius: 0.4rem;
+  box-shadow:
+    0rem 0.2rem 0.1rem 0rem rgba($bg-black, 0.20),
+    0rem 0.1rem 0.1rem 0rem rgba($bg-black, 0.14),
+    0rem 0.1rem 0.3rem 0rem rgba($bg-black, 0.12);
+
+  opacity: 1;
+  transform: scale(1);
+
+  transition:
+    box-shadow $duration $timing-func,
+    opacity $duration $timing-func,
+    transform $duration $timing-func;
+
+  .backdrop.is-hidden & {
+    box-shadow: none;
+    opacity: 0;
+    transform: scale(1.1);
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    background-color: darkolivegreen;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 528px;
+    background-color: cadetblue;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-color: bisque;
+  }
+}
+
+.modal__title {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-black;
+  background-color: $bg-primary;
+  border: 0.1rem solid rgba($bg-black, .1);
+  border-radius: 50%;
+
+  width: 3rem;
+  height: 3rem;
+
+  transition: color $duration $timing-func;
+
+  &:hover,
+  &:focus {
+    color: $text-accent;
+  }
+}
+
+.modal__icon-close {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  fill: currentColor;
+}

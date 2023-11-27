@@ -1,0 +1,23 @@
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  // background-color: chocolate;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    // background-color: darkolivegreen;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    // background-color: cadetblue;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    // background-color: bisque;
+  }
+}

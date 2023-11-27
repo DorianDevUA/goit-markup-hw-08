@@ -1,0 +1,17 @@
+.site-logo {
+  font-family: $font-logo;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: $text-black;
+
+  // background-color: burlywood;
+
+  &--inverse {
+    color: $text-inverse;
+  }
+}
+
+.site-logo__accent {
+  color: $text-accent;
+}

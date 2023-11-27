@@ -1,0 +1,17 @@
+.contact {
+  font-style: normal;
+  color: $text-inverse;
+}
+
+.contact__item {
+  line-height: 1.71;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.contact__link {
+  display: inline-block;
+  color: rgba($text-inverse, .6);
+}

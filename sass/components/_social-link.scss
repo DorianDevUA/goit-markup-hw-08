@@ -1,0 +1,28 @@
+.social-link {
+  display: flex;
+  // flex-wrap: wrap;
+
+  @media screen and (max-width: 767.98px) {
+    margin-left: -10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-link__item {
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      border-right: 1px solid red;
+    }
+  }
+}
+
+.social-link__link {
+  @media screen and (max-width: 767.98px) {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $text-accent;
+  }
+}

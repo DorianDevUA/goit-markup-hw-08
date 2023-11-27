@@ -1,0 +1,40 @@
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 60px;
+
+  border-bottom: 1px solid #ECECEC;
+  // background-color: #deb887;
+
+  @media screen and (min-weight: 768px) {
+    min-height: 80px;
+  }
+}
+
+.page-header__container {
+  @media screen and (max-width: 480px) {
+    flex-grow: 1;
+  }
+}
+
+.page-header__site-logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+}
+
+.page-header__site-nav {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 64px;
+  }
+}
+
+.page-header__site-contact {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 64px;
+  }
+}
