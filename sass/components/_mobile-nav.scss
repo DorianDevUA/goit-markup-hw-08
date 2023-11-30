@@ -1,0 +1,24 @@
+.mobile-nav {
+  flex-grow: 1;
+}
+
+.mobile-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mobile-nav__link {
+  color: $text-secondary;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  transition: color $duration $timing-func;
+
+  &:hover,
+  &:focus {
+    color: $text-accent;
+  }
+}

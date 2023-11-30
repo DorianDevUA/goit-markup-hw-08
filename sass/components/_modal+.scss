@@ -1,13 +1,13 @@
 .modal {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 40px;
 
   background-color: $bg-primary;
-  border-radius: 0.4rem;
+  border-radius: 4px;
   box-shadow:
-    0rem 0.2rem 0.1rem 0rem rgba($bg-black, 0.20),
-    0rem 0.1rem 0.1rem 0rem rgba($bg-black, 0.14),
-    0rem 0.1rem 0.3rem 0rem rgba($bg-black, 0.12);
+    0px 2px 1px 0px rgba($bg-black, 0.20),
+    0px 1px 1px 0px rgba($bg-black, 0.14),
+    0px 1px 3px 0px rgba($bg-black, 0.12);
 
   opacity: 1;
   transform: scale(1);
@@ -39,8 +39,8 @@
 }
 
 .modal__title {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
+  font-size: 20px;
+  margin-bottom: 12px;
   text-align: center;
 }
 
@@ -55,11 +55,11 @@
 
   color: $text-black;
   background-color: $bg-primary;
-  border: 0.1rem solid rgba($bg-black, .1);
+  border: 1px solid rgba($bg-black, .1);
   border-radius: 50%;
 
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 
   transition: color $duration $timing-func;
 
@@ -70,8 +70,8 @@
 }
 
 .modal__icon-close {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 18px;
+  height: 18px;
 
   fill: currentColor;
 }

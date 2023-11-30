@@ -1,28 +1,27 @@
 .social-link {
   display: flex;
-  // flex-wrap: wrap;
-
-  @media screen and (max-width: 767.98px) {
-    margin-left: -10px;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
+  margin-left: -10px;
 }
 
 .social-link__item {
-  @media screen and (max-width: 767.98px) {
-    &:not(:last-child) {
-      border-right: 1px solid red;
-    }
+  &:not(:last-child) {
+    border-right: 1px solid rgba($text-secondary, .2);
   }
 }
 
 .social-link__link {
-  @media screen and (max-width: 767.98px) {
-    padding-left: 10px;
-    padding-right: 10px;
-    color: $text-accent;
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  color: $text-accent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }

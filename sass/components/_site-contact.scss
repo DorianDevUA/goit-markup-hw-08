@@ -1,26 +1,55 @@
 .site-contact {
+  // background-color: lightcyan;
+
   @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 32px;
   }
 }
 
 .site-contact__item {
+  @media screen and (max-width: 1199.98px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .site-contact__link {
+  display: flex;
+  align-items: center;
+
+  color: $text-primary;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 767.98px) {
-    &[href^="tel:"] {
-      font-size: 32px;
-      color: $text-accent;
-    }
-    &[href^="mailto:"] {
-      font-size: 24px;
-      color: currentColor;
-    }
+  transition: color $duration $timing-func;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
+
+  &:hover,
+  &:focus {
+    color: $text-accent;
+  }
+}
+
+.site-contact__icon {
+  margin-right: 8px;
+  fill: currentColor;
 }
