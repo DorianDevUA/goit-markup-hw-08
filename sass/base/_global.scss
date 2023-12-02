@@ -1,17 +1,7 @@
-// */=================PX to REM========================\
-// |* Задаємо "font-size: 10px;" для html              |*
-// |* Для зручності обчислень (1rem=10px)              |*
-// |* У такому випадку "1rem" буде дорівнювати "10px"  |*
-// |* Тоді: | 1px = 0.1rem | 10px = 1rem | і т.д.      |*
-// *\==================================================/
-html {
-  font-size: 10px;
-}
-
 body {
   font-family: $font-main;
-  font-size: 1.4rem;
-  letter-spacing: 0.03rem;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: $text-primary;
   background: $bg-primary;
 
