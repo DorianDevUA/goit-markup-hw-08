@@ -3,18 +3,24 @@
   top: 0;
   left: 0;
   z-index: 999;
+  overflow-y: scroll;
 
   width: 100%;
   height: 100%;
-  padding: 9.3rem 1.5rem;
 
-  background-color: rgba($bg-black, .5);
+  background-color: rgba($bg-black, .2);
 
   opacity: 1;
   visibility: visible;
-  overflow-y: scroll;
 
   transition: opacity $duration $timing-func;
+
+  @media screen and (max-width: 767.98px) {
+    padding-top: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 93px;;
+  }
 }
 
 .backdrop.is-hidden {
