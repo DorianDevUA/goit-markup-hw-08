@@ -10,3 +10,11 @@ body {
     overflow: hidden;
   }
 }
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+
+  color: $text-secondary;
+  text-align: center;
+}
