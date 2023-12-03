@@ -1,30 +1,30 @@
 // Site Font family
-@import "./utils/fonts";
+@import './utils/fonts';
 
 // Site base styles
-@import "./utils/variables";
-@import "./utils/breakpoints";
-@import "./base/reset";
-@import "./base/global";
+@import './utils/variables';
+@import './utils/breakpoints';
+@import './base/reset';
+@import './base/global';
 
 // Site components
-@import "./components/container";
-@import "./components/btn";
+@import './components/container';
+@import './components/btn';
 
-@import "./components/page-header";
-@import "./components/navigation";
-@import "./components/site-logo";
-@import "./components/mobile-menu";
-@import "./components/mobile-nav";
-@import "./components/mobile-contacts";
-@import "./components/social-link";
-@import "./components/site-nav";
-@import "./components/site-contact";
+@import './components/page-header';
+@import './components/navigation';
+@import './components/site-logo';
+@import './components/mobile-menu';
+@import './components/mobile-nav';
+@import './components/mobile-contacts';
+@import './components/social-link';
+@import './components/site-nav';
+@import './components/site-contact';
 
-@import "./components/hero";
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/callback";
+@import './components/hero';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/callback';
 
 // Utils
-@import "./utils/visually-hidden";
+@import './utils/visually-hidden';

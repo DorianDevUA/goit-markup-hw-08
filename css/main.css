@@ -95,7 +95,7 @@ body.mobile-menu-open, body.modal-open {
       -ms-flex-align: center;
           align-items: center;
   min-height: 60px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 @media screen and (min-width: 768px) {
   .page-header {

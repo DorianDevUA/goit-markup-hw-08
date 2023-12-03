@@ -37,7 +37,7 @@
   }
 
   &::after {
-    content: "";
+    content: '';
     display: block;
 
     position: absolute;
@@ -52,9 +52,7 @@
     opacity: 0;
     transform: scaleX(0);
 
-    transition:
-      opacity $duration $timing-func,
-      transform $duration $timing-func,
+    transition: opacity $duration $timing-func, transform $duration $timing-func;
   }
 
   &--current::after,
@@ -63,5 +61,4 @@
     opacity: 1;
     transform: scaleX(1);
   }
-
 }

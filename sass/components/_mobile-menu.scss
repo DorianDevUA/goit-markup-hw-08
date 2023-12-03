@@ -22,9 +22,7 @@
 
   transform: translateX(-100%);
   opacity: 0;
-  transition:
-    transform $duration $timing-func,
-    opacity $duration $timing-func;
+  transition: transform $duration $timing-func, opacity $duration $timing-func;
 
   &.is-open {
     transform: translateX(0);
@@ -37,14 +35,12 @@
   border: none;
   border-radius: 50%;
 
-  transition:
-    color $duration $timing-func,
-    background-color $duration $timing-func;
+  transition: color $duration $timing-func, background-color $duration $timing-func;
 
   &:hover,
   &:focus {
     color: $text-accent;
-    background-color: rgba($bg-dark, .1);
+    background-color: rgba($bg-dark, 0.1);
   }
 
   &--open {
@@ -69,6 +65,6 @@
   margin-bottom: 64px;
 }
 
-.mobile-menu__mobile-contacts{
+.mobile-menu__mobile-contacts {
   margin-bottom: 64px;
 }

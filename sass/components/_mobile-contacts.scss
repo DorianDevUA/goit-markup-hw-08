@@ -1,4 +1,5 @@
-.mobile-contacts {}
+.mobile-contacts {
+}
 
 .mobile-contacts__item {
   &:not(:last-child) {
@@ -12,7 +13,7 @@
   font-weight: 500;
   letter-spacing: 0.02em;
 
-  &[href^="tel:"] {
+  &[href^='tel:'] {
     font-size: 34px;
     color: $text-accent;
   }
