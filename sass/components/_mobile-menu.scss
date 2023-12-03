@@ -8,6 +8,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+  height: 100svh;
   overflow-y: scroll;
   background-color: $bg-primary;
 
@@ -18,7 +19,7 @@
   padding-top: 48px;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 130px;
+  padding-bottom: 48px;
 
   transform: translateX(-100%);
   opacity: 0;

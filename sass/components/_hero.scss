@@ -5,12 +5,17 @@
   align-items: center;
 
   max-width: 1600px;
-  min-height: 600px;
+  min-height: 400px;
+  // padding: 0 60px;
   background-color: $bg-dark;
   background-image: linear-gradient(to right, rgba($bg-dark, 0.4), rgba($bg-dark, 0.4)), url(../images/img-overlay.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    min-height: 600px;
+  }
 }
 
 .hero__title {
