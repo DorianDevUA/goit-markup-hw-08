@@ -94,7 +94,7 @@
 .callback__custom-checkbox {
   display: inline-block;
   min-width: 16px;
-  height: 15px;
+  height: 16px;
   margin-right: 8px;
 
   background-image: url(../images/checkbox.svg);
@@ -108,9 +108,9 @@
     background-image: url(../images/check.svg);
   }
 
-  .callback__checkbox:focus + & {
-    outline: auto;
-  }
+  // .callback__checkbox:focus + & {
+  //   outline: auto;
+  // }
 }
 
 .callback__text {
