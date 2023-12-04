@@ -1,16 +1,19 @@
 .filter {
+  // background-color: cadetblue;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  flex-wrap: wrap;
+  gap: 15px 8px;
 
-.filter__item {
-  &:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 }
 
+.filter__item {
+}
+
 .filter__btn {
+  display: inline-block;
   min-width: 73px;
   min-height: 38px;
   padding: 6px 22px;
@@ -26,29 +29,14 @@
   border: none;
   border-radius: 4px;
 
-  transition:
-    color $duration $timing-function,
-    background-color $duration $timing-function,
-    box-shadow $duration $timing-function;
+  transition: color $duration $timing-func, background-color $duration $timing-func, box-shadow $duration $timing-func;
 
+  &--current,
   &:hover,
   &:focus {
     color: $text-inverse;
     background-color: $bg-accent;
 
-    box-shadow:
-      0px 2px 2px 0px rgba($bg-black, .12),
-      0px 1px 2px 0px rgba($bg-black, .08),
-      0px 3px 1px 0px rgba($bg-black, .10);
+    box-shadow: 0px 2px 2px 0px rgba($bg-black, 0.12), 0px 1px 2px 0px rgba($bg-black, 0.08), 0px 3px 1px 0px rgba($bg-black, 0.1);
   }
-}
-
-.filter__btn--current {
-  color: $text-inverse;
-  background-color: $bg-accent;
-
-  box-shadow:
-    0px 2px 2px 0px rgba($bg-black, .12),
-    0px 1px 2px 0px rgba($bg-black, .08),
-    0px 3px 1px 0px rgba($bg-black, .10);
 }
