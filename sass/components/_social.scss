@@ -1,5 +1,5 @@
 .social {
-  // background-color: darkslategray;
+  // background-color: darkslateblue;
 }
 
 .social__call-to-action{
@@ -8,13 +8,13 @@
 
 .social__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  justify-content: center;
+  // background-color: cornflowerblue;
 }
 
 .social__item {
   &:not(:first-child) {
-    // margin-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -31,8 +31,8 @@
   border-radius: 50%;
 
   transition:
-    color $duration $timing-function,
-    background-color $duration $timing-function;
+    color $duration $timing-func,
+    background-color $duration $timing-func;
 
   &:hover,
   &:focus {
@@ -40,19 +40,18 @@
     background-color: $bg-accent;
   }
 
-  &:hover .social__icon,
-  &:focus .social__icon {
-    transform: rotate(360deg);
-  }
-
   &--gray {
-    color: $icon-color
+    color: $icon-color;
   }
 }
 
 .social__icon {
   fill: currentColor;
-  transform: rotate(0);
 
-  transition: transform 1500ms $timing-function;
+  .social__link:hover &,
+  .social__link:focus & {
+    transform: rotate(360deg);
+  }
+
+  transition: transform 1500ms $timing-func;
 }

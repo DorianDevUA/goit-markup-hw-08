@@ -1,13 +1,19 @@
 .contact {
   font-style: normal;
-  color: $text-inverse;
+  text-align: center;
+
+  // background-color: darkolivegreen;
+  @media screen and (min-width: 1200px) {
+  text-align: start;
+  }
 }
 
 .contact__item {
   line-height: 1.71;
+  // background-color: cadetblue;
 
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 
